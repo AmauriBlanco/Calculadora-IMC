@@ -2,12 +2,13 @@
     --card-color: #70e276;
     --back-color: #f1f1f1;
 }
-main{
+main{  
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .container{
     display: flex;
@@ -19,7 +20,9 @@ main{
     justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: 0 2px 10px black;
+    
 }
+
 .title{
     display: flex;
     justify-content: center;
@@ -75,5 +78,14 @@ button{
     box-sizing: border-box;
     user-select: none;
     
+    
+}
+@media screen and (max-width: 500px) {
+    .title{
+        font-size: 1.8rem;
+    }
+    .input label{
+        font-size: 1.3rem;
+    }
     
 }
